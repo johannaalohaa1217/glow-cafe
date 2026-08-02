@@ -1,6 +1,6 @@
 # Glow Café
 
-A modern, elegant one-page site for a fictional coffee shop, built with React + Vite (no CSS framework).
+A modern, elegant one-page site for a coffee shop, built with React + Vite (no CSS framework).
 
 ## Run it
 
