@@ -6,31 +6,13 @@
   z-index: 100;
   padding: 22px 0;
   isolation: isolate;
-  transition: padding 0.35s ease, background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease, border-color 0.35s ease;
-}
-
-.navbar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 100%);
-  backdrop-filter: blur(16px) saturate(140%);
-  border-bottom: 1px solid transparent;
-  pointer-events: none;
-  z-index: -1;
-  transition: background 0.35s ease, border-color 0.35s ease;
+  transition: padding 0.35s ease, background 0.35s ease, backdrop-filter 0.35s ease;
 }
 
 .navbar.scrolled {
   padding: 12px 0;
   background: var(--nav-bg);
   backdrop-filter: blur(14px) saturate(140%);
-  box-shadow: 0 1px 0 var(--border);
-}
-
-.navbar.scrolled::before {
-  background: var(--nav-bg);
-  border-bottom-color: var(--navbar-border);
 }
 
 .navbar-inner {
@@ -155,12 +137,10 @@ html.dark .theme-toggle {
   background: var(--nav-bg);
   backdrop-filter: blur(14px) saturate(140%);
   transition: max-height 0.4s ease;
-  border-bottom: 1px solid transparent;
 }
 
 .mobile-menu.open {
   max-height: 480px;
-  border-bottom: 1px solid var(--border);
 }
 
 .mobile-menu nav {
