@@ -20,7 +20,7 @@ export default function Menu() {
           <p className="eyebrow" style={{ justifyContent: "center" }}>
             The Menu
           </p>
-          <h2>Eight cups worth reordering</h2>
+          <h2>Eight Favorites You'll Crave Again</h2>
           <p>
             Everything is made to order, dairy-free by request, and paired well with
             whatever's fresh out of the oven that morning.
