@@ -105,7 +105,7 @@ hamburger.addEventListener("click", () => { const open = mobileMenu.classList.to
 
 const themeToggle = document.querySelector("#theme-toggle");
 const storedTheme = localStorage.getItem("glow-theme");
-if (storedTheme === "dark") document.documentElement.classList.add("dark");
+if (storedTheme !== "light") document.documentElement.classList.add("dark");
 function syncThemeButton() { const dark = document.documentElement.classList.contains("dark"); themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode"); themeToggle.setAttribute("aria-pressed", dark); themeToggle.textContent = dark ? "☼" : "◐"; }
 themeToggle.addEventListener("click", () => { document.documentElement.classList.toggle("dark"); localStorage.setItem("glow-theme", document.documentElement.classList.contains("dark") ? "dark" : "light"); syncThemeButton(); });
 syncThemeButton();

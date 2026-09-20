@@ -2,10 +2,6 @@
   background: var(--espresso-950);
   color: var(--cream-100);
   padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
 }
 
 .footer-signal {
@@ -42,6 +38,15 @@
   font-size: 0.78rem;
 }
 
+.footer-social {
+  grid-area: ritual;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+}
+
 .footer-social h4 {
   margin-bottom: 0;
 }
@@ -52,10 +57,22 @@
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.9fr);
+  grid-template-areas:
+    "brand ritual"
+    "links ritual";
+  column-gap: 72px;
+  row-gap: 42px;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(251, 242, 233, 0.1);
+}
+
+.footer-brand {
+  grid-area: brand;
+}
+
+.footer-links {
+  grid-area: links;
 }
 
 .footer-brand p {
@@ -128,6 +145,14 @@
 @media (max-width: 780px) {
   .footer-inner {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "links"
+      "ritual";
     gap: 36px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
   }
 }
