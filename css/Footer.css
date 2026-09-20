@@ -1,0 +1,158 @@
+.footer {
+  background: var(--espresso-950);
+  color: var(--cream-100);
+  padding-top: 80px;
+}
+
+.footer-signal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--cream-100);
+}
+
+.footer-signal-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(251, 242, 233, 0.25);
+  border-radius: 50%;
+  color: var(--amber-400);
+  font-size: 1.25rem;
+}
+
+.footer-signal p {
+  margin: 0;
+  color: rgba(251, 242, 233, 0.72);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.footer-signal small {
+  display: block;
+  margin-top: 3px;
+  color: rgba(251, 242, 233, 0.45);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+}
+
+.footer-social {
+  grid-area: ritual;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer-social h4 {
+  margin-bottom: 0;
+}
+
+.footer .brand {
+  color: var(--cream-050);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.9fr);
+  grid-template-areas:
+    "brand ritual"
+    "links ritual";
+  column-gap: 72px;
+  row-gap: 42px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(251, 242, 233, 0.1);
+}
+
+.footer-brand {
+  grid-area: brand;
+}
+
+.footer-links {
+  grid-area: links;
+}
+
+.footer-brand p {
+  margin-top: 16px;
+  color: rgba(251, 242, 233, 0.6);
+  font-size: 0.92rem;
+  max-width: 32ch;
+}
+
+.footer h4 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(251, 242, 233, 0.5);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: rgba(251, 242, 233, 0.78);
+  font-size: 0.94rem;
+  transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: var(--amber-400);
+}
+
+.social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(251, 242, 233, 0.16);
+  color: var(--cream-100);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.footer .social-icon:hover {
+  background: var(--amber-500);
+  border-color: var(--amber-500);
+  color: var(--espresso-950);
+  transform: translateY(-3px);
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 22px 0;
+  font-size: 0.82rem;
+  color: rgba(251, 242, 233, 0.45);
+}
+
+@media (max-width: 780px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "links"
+      "ritual";
+    gap: 36px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+}

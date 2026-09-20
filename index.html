@@ -5,17 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Glow Café — small-batch coffee, roasted warm, poured slow. Order ahead or come sit with us." />
     <title>Glow Café — Coffee Roasted Warm</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="/glow-cafe/assets/index-CC66rbNb.js"></script>
-    <link rel="stylesheet" crossorigin href="/glow-cafe/assets/index-FBhFEN9E.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/Hero.css" />
+    <link rel="stylesheet" href="css/About.css" />
+    <link rel="stylesheet" href="css/Menu.css" />
+    <link rel="stylesheet" href="css/Gallery.css" />
+    <link rel="stylesheet" href="css/Testimonials.css" />
+    <link rel="stylesheet" href="css/FAQ.css" />
+    <link rel="stylesheet" href="css/Contact.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
+    <link rel="stylesheet" href="css/LoadingScreen.css" />
+    <link rel="stylesheet" href="css/BackToTop.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-mark"><span class="loading-cup" aria-hidden="true">☕</span><span>Glow Café</span></div>
+    </div>
+
+    <header class="navbar" id="navbar">
+      <div class="container navbar-inner">
+        <a href="#home" class="brand"><span class="brand-mark" aria-hidden="true">☕</span>Glow Café</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        </nav>
+        <div class="navbar-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">◐</button>
+          <a href="#menu" class="btn btn-primary btn-sm nav-cta">Order Now</a>
+          <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu"><nav aria-label="Mobile"><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#testimonials">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#menu" class="btn btn-primary">Order Now</a></nav></div>
+    </header>
+
+    <main>
+      <section id="home" class="hero"><div class="hero-bg"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1800&q=80" alt="" aria-hidden="true"><div class="hero-scrim"></div><div class="hero-glow"></div></div><div class="container hero-content"><p class="eyebrow eyebrow-light">Small-batch · Downtown Roastery</p><h1>Coffee roasted warm,<br>poured <em>slow</em>.</h1><p class="hero-sub">Glow Café is a corner of downtown built around one habit: a really good cup, made by people who remember your order. Sit in, or order ahead — either way, it's ready when you are.</p><div class="hero-actions"><a href="#menu" class="btn btn-primary">Order Now</a><a href="#menu" class="btn btn-ghost btn-outline-light">View Menu</a></div></div></section>
+
+      <section id="about" class="section about"><div class="container about-grid"><div class="reveal about-media"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Barista preparing a latte at the Glow Café counter" class="about-img-main"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Latte art in a warm ceramic cup" class="about-img-accent"></div><div class="about-copy"><div class="reveal"><p class="eyebrow">Our Story</p><h2>Started with one espresso machine and a stubborn opinion.</h2></div><div class="reveal" style="transition-delay:80ms"><p class="about-text">Glow Café opened in 2019 in a narrow space that used to be a print shop — you can still see the old shelving in the back wall. We started roasting in small batches because we couldn't find a blend downtown that tasted the way we remembered coffee tasting at home. Five years on, the machine has changed twice, but the habit hasn't: taste everything before it goes on the menu, and never rush the pour.</p></div><div class="reveal mission-vision" style="transition-delay:140ms"><div><h3>Mission</h3><p>Serve coffee worth slowing down for, made by people who know your name.</p></div><div><h3>Vision</h3><p>Become the room this neighborhood starts its mornings and finishes its meetings in.</p></div></div></div></div><div class="reveal"><div class="stats-row reveal-stagger"><div class="stat-card"><span class="stat-value mono">5+</span><span class="stat-label">Years pouring</span></div><div class="stat-card"><span class="stat-value mono">10K+</span><span class="stat-label">Customers served</span></div><div class="stat-card"><span class="stat-value mono">20+</span><span class="stat-label">Drinks on the menu</span></div></div></div></section>
+
+      <section id="menu" class="section menu"><div class="container"><div class="reveal section-head center"><p class="eyebrow" style="justify-content:center">The Menu</p><h2>Eight Favorites You'll Crave Again</h2><p>Everything is made to order, dairy-free by request, and paired well with whatever's fresh out of the oven that morning.</p></div><div class="reveal menu-filters" id="menu-filters"></div><div class="menu-grid reveal-stagger" id="menu-grid"></div></div></section>
+
+      <section id="gallery" class="section gallery"><div class="container"><div class="reveal section-head center"><p class="eyebrow" style="justify-content:center">Gallery</p><h2>A look inside</h2><p>Come see it for yourself, or take a lap around the room from here first.</p></div><div class="gallery-grid" id="gallery-grid"></div></div><div class="lightbox" id="lightbox" hidden><button class="lightbox-close" type="button" aria-label="Close image">&times;</button><img id="lightbox-image" alt=""></div></section>
+
+      <section id="testimonials" class="section testimonials"><div class="container"><div class="reveal section-head center"><p class="eyebrow" style="justify-content:center">Reviews</p><h2>What the regulars say</h2><p>We didn't write these. Pulled straight from our review page and the odd napkin note.</p></div><div class="testimonial-grid" id="testimonial-grid"></div></div></section>
+
+      <section id="faq" class="section faq"><div class="container faq-grid"><div class="reveal section-head"><p class="eyebrow">FAQ</p><h2>Good to know before you come in</h2><p>Can't find your question here? The contact form below reaches us directly.</p></div><div class="faq-list" id="faq-list"></div></div></section>
+
+      <section id="contact" class="section contact"><div class="container"><div class="reveal section-head center"><p class="eyebrow" style="justify-content:center">Contact</p><h2>Come say hello</h2><p>Questions, catering, or just want to know if we have a table free — reach out.</p></div><div class="contact-grid"><div class="reveal contact-info"><ul class="info-list"><li><span class="info-icon">⌖</span><div><span class="info-label">Address</span><span class="info-value">128 Amber Lane, Riverside District</span></div></li><li><span class="info-icon">⌕</span><div><span class="info-label">Phone</span><span class="info-value">(555) 214-8890</span></div></li><li><span class="info-icon">@</span><div><span class="info-label">Email</span><span class="info-value">hello@glowcafe.com</span></div></li><li><span class="info-icon">◷</span><div><span class="info-label">Hours</span><span class="info-value">Mon–Sun · 7:00am – 7:00pm</span></div></li></ul><div class="socials"><a href="#" class="social-icon" aria-label="Instagram">I</a><a href="#" class="social-icon" aria-label="Facebook">F</a><a href="#" class="social-icon" aria-label="TikTok">T</a></div><div class="map-embed"><iframe title="Glow Café location" src="https://www.google.com/maps?q=coffee+shop+riverside+district&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><div class="reveal contact-form-wrap" style="transition-delay:80ms"><form class="contact-form" id="contact-form"><div class="form-row"><label>Name<input type="text" name="name" placeholder="Your name" required></label><label>Email<input type="email" name="email" placeholder="you@email.com" required></label></div><label>Subject<input type="text" name="subject" placeholder="What's this about?"></label><label>Message<textarea name="message" rows="5" placeholder="Tell us a bit more..." required></textarea></label><button type="submit" class="btn btn-primary">Send Message</button></form></div></div></div></section>
+        <section id="contact" class="section contact"><div class="container"><div class="reveal section-head center"><p class="eyebrow" style="justify-content:center">Contact</p><h2>Come say hello</h2><p>Questions, catering, or just want to know if we have a table free — reach out.</p></div><div class="contact-grid"><div class="reveal contact-info"><ul class="info-list"><li><span class="info-icon">⌖</span><div><span class="info-label">Address</span><span class="info-value">128 Amber Lane, Riverside District</span></div></li><li><span class="info-icon">⌕</span><div><span class="info-label">Phone</span><span class="info-value">(555) 214-8890</span></div></li><li><span class="info-icon">@</span><div><span class="info-label">Email</span><span class="info-value">hello@glowcafe.com</span></div></li><li><span class="info-icon">◷</span><div><span class="info-label">Hours</span><span class="info-value">Mon–Sun · 7:00am – 7:00pm</span></div></li></ul><div class="socials"><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a><a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M14 9h2.5V6H14c-2 0-3.5 1.6-3.5 3.5V11H8v3h2.5v6H13v-6h2.2l.5-3H13V9.6c0-.4.3-.6.6-.6z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></a><a href="#" class="social-icon" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4v9.6a3 3 0 1 1-2.4-2.94" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 4c.4 2 2 3.6 4 3.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></div><div class="map-embed"><iframe title="Glow Café location" src="https://www.google.com/maps?q=coffee+shop+riverside+district&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><div class="reveal contact-form-wrap" style="transition-delay:80ms"><form class="contact-form" id="contact-form"><div class="form-row"><label>Name<input type="text" name="name" placeholder="Your name" required></label><label>Email<input type="email" name="email" placeholder="you@email.com" required></label></div><label>Subject<input type="text" name="subject" placeholder="What's this about?"></label><label>Message<textarea name="message" rows="5" placeholder="Tell us a bit more..." required></textarea></label><button type="submit" class="btn btn-primary">Send Message</button></form></div></div></div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><a href="#home" class="brand"><span class="brand-mark" aria-hidden="true">☕</span>Glow Café</a><p>128 Amber Lane, Riverside District — open every day, 7am to 7pm.</p></div><div class="footer-links"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-social"><h4>The Glow Ritual</h4><div class="footer-signal"><span class="footer-signal-mark" aria-hidden="true">☕</span><p>Slow mornings<small>Good coffee, every day.</small></p></div></div></div><div class="footer-bottom"><div class="container footer-bottom-inner"><span>© <span id="year"></span> Glow Café. All rights reserved.</span><span class="footer-credit">Made with a lot of coffee.</span></div></div></footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
   </body>
 </html>
