@@ -2,6 +2,48 @@
   background: var(--espresso-950);
   color: var(--cream-100);
   padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.footer-signal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--cream-100);
+}
+
+.footer-signal-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(251, 242, 233, 0.25);
+  border-radius: 50%;
+  color: var(--amber-400);
+  font-size: 1.25rem;
+}
+
+.footer-signal p {
+  margin: 0;
+  color: rgba(251, 242, 233, 0.72);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.footer-signal small {
+  display: block;
+  margin-top: 3px;
+  color: rgba(251, 242, 233, 0.45);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+}
+
+.footer-social h4 {
+  margin-bottom: 0;
 }
 
 .footer .brand {

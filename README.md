@@ -1,33 +1,18 @@
 # Glow Café
 
-A modern, elegant one-page site for a coffee shop, built with React + Vite (no CSS framework).
+A modern, elegant one-page site for a coffee shop, built with plain HTML, CSS, and JavaScript.
 
 ## Run it
 
-```bash
-npm install
-npm run dev
-```
-
-Then open the printed local URL (usually http://localhost:5173).
-
-## Build for production
-
-```bash
-npm run build
-npm run preview
-```
+Open `index.html` directly in a browser, or serve the folder with any static file server.
 
 ## Project structure
 
 ```
-src/
-  components/   # Navbar, Hero, About, Menu, Gallery, Testimonials, FAQ, Contact, Footer, ...
-  data/         # menuItems.js, testimonials.js, faqs.js
-  hooks/        # useReveal (scroll animations), useDarkMode
-  App.jsx
-  main.jsx
-  index.css     # design tokens + shared utility classes
+index.html       # page markup and content sections
+script.js        # filters, theme toggle, menu, gallery, FAQ and form behavior
+css/             # design tokens and section styles
+public/          # optional static assets
 ```
 
 ## Features

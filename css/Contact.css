@@ -68,6 +68,11 @@
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
+.social-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
 .social-icon:hover {
   background: var(--accent);
   color: var(--on-accent);
